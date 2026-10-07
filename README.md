@@ -34,23 +34,17 @@ The framework follows a hybrid molecular learning pipeline:
 
 ```text
 SMILES Input
-      │
-      ▼
+      ↓
 Molecular Graph Construction
-      │
-      ▼
+      ↓
 Graph Neural Network Encoder
-      │
-      ▼
+      ↓
 Dense Projection Layer
-      │
-      ▼
+      ↓
 Variational Quantum Circuit
-      │
-      ▼
+      ↓
 Feature Fusion Layer
-      │
-      ▼
+      ↓
 Property Prediction / Optimization Output
 ```
 
@@ -112,13 +106,13 @@ python -m venv venv
 
 ### 3. Activate the Virtual Environment
 
-For **Windows**:
+#### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-For **Linux/macOS**:
+#### Linux / macOS
 
 ```bash
 source venv/bin/activate
@@ -134,7 +128,7 @@ pip install -r requirements.txt
 
 ## Dataset Preparation
 
-QuantumDrugAI supports the following datasets:
+QuantumDrugAI supports the following molecular datasets:
 
 | Dataset | Application |
 |---|---|
@@ -143,7 +137,7 @@ QuantumDrugAI supports the following datasets:
 | **BBBP** | Blood-brain barrier penetration prediction |
 | **ZINC** | Molecule optimization and generation |
 
-Run preprocessing using:
+### Run Preprocessing
 
 ```bash
 python data/preprocess.py
@@ -175,7 +169,7 @@ python training/optimize_molecules.py
 
 ## Evaluation
 
-Run evaluation and visualization using:
+Run the evaluation and visualization module using:
 
 ```bash
 python evaluation/visualization.py
@@ -217,16 +211,16 @@ The molecule optimization pipeline evaluates:
 
 ## Explainability
 
-QuantumDrugAI supports explainability and interpretability analysis for molecular predictions.
+QuantumDrugAI provides explainability utilities to improve the interpretability of molecular predictions.
 
-The supported explainability features include:
+Supported explainability features include:
 
 - Atom Importance Analysis
 - Feature Attribution
 - Molecular Embedding Visualization
 - Attention-Based Interpretability
 
-These techniques help identify important atoms, molecular features, and learned representations that contribute to model predictions.
+These methods can help identify important atoms, molecular features, and learned representations contributing to model predictions.
 
 ---
 
@@ -251,8 +245,6 @@ The output directory may contain:
 
 ## Example Output
 
-An example model-training output is shown below:
-
 ```text
 Epoch 20/50
 Training Loss: 0.0214
@@ -264,7 +256,7 @@ ROC-AUC: 0.963
 
 ## Reproducibility
 
-To reproduce the complete experimental workflow, run:
+To reproduce the experiments, run:
 
 ```bash
 python main.py
@@ -274,7 +266,7 @@ python main.py
 
 ## Future Enhancements
 
-Future extensions of QuantumDrugAI may include:
+Future development directions include:
 
 - Real quantum hardware execution
 - Transformer-based molecular encoders
@@ -288,7 +280,7 @@ Future extensions of QuantumDrugAI may include:
 
 If you use **QuantumDrugAI** in academic research, please cite:
 
-```bibtex
+```text
 @article{QuantumDrugAI2026,
   title={QuantumDrugAI: Quantum–Classical Hybrid Learning Framework for Molecular Property Prediction and Molecule Optimization in Drug Discovery},
   year={2026}
@@ -305,31 +297,16 @@ See the `LICENSE` file for details.
 
 ---
 
-## Research Areas
+## Project Summary
 
-QuantumDrugAI is designed to support research in:
+**QuantumDrugAI** combines classical Graph Neural Networks with Variational Quantum Circuits to provide a hybrid quantum–classical framework for molecular property prediction and molecule optimization.
+
+The framework is designed for research in:
 
 - Quantum Machine Learning
-- Artificial Intelligence for Drug Discovery
+- Drug Discovery
 - Computational Chemistry
 - Molecular Property Prediction
-- Molecular Optimization
 - Molecular Generation
-- Graph Neural Networks
-- Variational Quantum Circuits
 - Explainable Artificial Intelligence
-- Hybrid Quantum–Classical Learning
-
----
-
-## Project Status
-
-**Research Prototype**
-
-The framework is intended for research, experimentation, and development in quantum-enhanced molecular machine learning and AI-driven drug discovery.
-
----
-
-## Acknowledgement
-
-QuantumDrugAI was developed as a research-oriented framework for investigating the integration of **Graph Neural Networks**, **Variational Quantum Circuits**, molecular representation learning, and molecule optimization for computational drug discovery.
+- Quantum–Classical Hybrid Learning
