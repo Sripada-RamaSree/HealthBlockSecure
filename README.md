@@ -601,7 +601,7 @@ Optional components:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Sripada-RamaSree/HealthBlockSecure.git
+git clone https://github.com/Sripada-RamaSree/HealthBlockSecure
 cd HealthBlockSecure
 ```
 
