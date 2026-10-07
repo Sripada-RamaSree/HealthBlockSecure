@@ -1,0 +1,36 @@
+project:
+  name: HealthBlockSecure
+  seeds: [42, 123, 256, 512, 1024]
+
+data:
+  synthetic_records: 10000
+  mimic_records: 5000
+  requests_per_dataset: 1000
+  compliant_fraction: 0.70
+  test_fraction: 0.20
+  validation_fraction_of_development: 0.20
+
+privaccessnet:
+  hidden_units: [64, 32, 16]
+  dropout: 0.30
+  learning_rate: 0.001
+  batch_size: 32
+  max_epochs: 50
+  patience: 6
+  threshold_strategy: f1
+
+security:
+  aes_key_bits: 256
+  token_ttl_seconds: 300
+  ecc_curve: secp256r1
+
+runtime:
+  ledger_db: data/healthblocksecure.db
+  storage_dir: data/storage
+  zkp_mode: research
+  model_backend: auto
+
+experiments:
+  concurrency_levels: [1, 5, 10, 25, 50, 100]
+  record_sizes_bytes: [2048, 10240, 102400, 1048576, 5242880]
+  tamper_levels: [1, 5, 20, 100]
