@@ -30,7 +30,7 @@ The framework combines blockchain-based access control, encrypted off-chain stor
 
 ---
 
-## 1. System Overview
+## System Overview
 
 Conventional cloud-based EHR systems depend heavily on centralised trust and may provide limited transparency, auditability, and adaptability in access-control decisions.
 
@@ -49,7 +49,7 @@ HealthBlockSecure uses a hybrid blockchain-cloud architecture in which:
 
 ---
 
-## 2. Main Contributions
+## Main Contributions
 
 HealthBlockSecure integrates:
 
@@ -75,7 +75,7 @@ HealthBlockSecure integrates:
 
 ---
 
-## 3. System Architecture
+## System Architecture
 
 ### User Layer
 
@@ -112,7 +112,7 @@ Only references, hashes, encrypted key material, policies, and relevant metadata
 
 ---
 
-## 4. End-to-End Workflow
+## End-to-End Workflow
 
 ```text
 Patient EHR
@@ -175,7 +175,7 @@ Audit Logging
 
 ---
 
-## 5. PrivAccessNet
+## PrivAccessNet
 
 **PrivAccessNet** is the learning-based access-validation component of HealthBlockSecure.
 
@@ -259,7 +259,7 @@ The PrivAccessNet score is used as a **decision-support signal** and does not re
 
 ---
 
-## 6. Access Decision Logic
+## Access Decision Logic
 
 Access is granted only when all required conditions are satisfied:
 
@@ -279,7 +279,7 @@ This combines deterministic policy enforcement with data-driven, anomaly-aware v
 
 ---
 
-## 7. Security Scenarios
+## Security Scenarios
 
 ### Legitimate Requests
 
@@ -308,7 +308,7 @@ These scenarios support reproducible access-control dataset generation and PrivA
 
 ---
 
-## 8. Cryptographic Components
+## Cryptographic Components
 
 ### AES Record Encryption
 
@@ -357,7 +357,7 @@ Any mismatch is treated as an integrity failure.
 
 ---
 
-## 9. Decentralised Identity
+## Decentralised Identity
 
 HealthBlockSecure includes a lightweight DID-oriented identity module.
 
@@ -382,7 +382,7 @@ Private cryptographic keys remain outside the ledger.
 
 ---
 
-## 10. Zero-Knowledge Proof Integration
+## Zero-Knowledge Proof Integration
 
 The architecture supports an external ZKP verification service.
 
@@ -419,7 +419,7 @@ The standalone research mode can use a deterministic verification adapter so tha
 
 ---
 
-## 11. Blockchain Integration
+## Blockchain Integration
 
 HealthBlockSecure contains components for integration with **Hyperledger Fabric**.
 
@@ -455,7 +455,7 @@ The standalone research mode can use a lightweight local ledger backend for deve
 
 ---
 
-## 12. Off-Chain Storage
+## Off-Chain Storage
 
 Encrypted EHRs are stored outside the blockchain ledger.
 
@@ -483,7 +483,7 @@ Supported or extensible storage backends include:
 
 ---
 
-## 13. Datasets
+## Datasets
 
 ### SyntheticMass / Synthea
 
@@ -511,7 +511,7 @@ MIMIC-IV is **not included in this repository**. Researchers must obtain authori
 
 ---
 
-## 14. Repository Structure
+## Repository Structure
 
 ```text
 HealthBlockSecure/
@@ -577,7 +577,7 @@ HealthBlockSecure/
 
 ---
 
-## 15. Installation
+## Installation
 
 ### Prerequisites
 
@@ -636,7 +636,7 @@ pip install -r requirements-tensorflow.txt
 
 ---
 
-## 16. Quick Start
+## Quick Start
 
 Run the standalone end-to-end demonstration:
 
@@ -662,7 +662,7 @@ The demonstration covers:
 
 ---
 
-## 17. PrivAccessNet Experiments
+## PrivAccessNet Experiments
 
 ### Scikit-learn Backend
 
@@ -680,7 +680,7 @@ The TensorFlow implementation follows the proposed PrivAccessNet neural architec
 
 ---
 
-## 18. Complete Experimental Pipeline
+## Complete Experimental Pipeline
 
 ### Lightweight Backend
 
@@ -711,7 +711,7 @@ The experimental pipeline can execute:
 
 ---
 
-## 19. Reproducibility
+## Reproducibility
 
 The experiments support multiple random seeds.
 
@@ -738,7 +738,7 @@ mean ± standard deviation
 
 ---
 
-## 20. Evaluation Metrics
+## Evaluation Metrics
 
 ### Machine-Learning Metrics
 
@@ -783,7 +783,7 @@ mean ± standard deviation
 
 ---
 
-## 21. Baselines
+## Baselines
 
 ### Access-Control Baselines
 
@@ -805,7 +805,7 @@ mean ± standard deviation
 
 ---
 
-## 22. Ablation Study
+## Ablation Study
 
 The framework supports component-wise ablation.
 
@@ -829,7 +829,7 @@ Ablation analysis can compare:
 
 ---
 
-## 23. Tamper-Detection Experiment
+## Tamper-Detection Experiment
 
 The framework supports controlled corruption of encrypted or recovered records.
 
@@ -844,7 +844,7 @@ Integrity is verified by comparing the SHA-256 hash against the registered refer
 
 ---
 
-## 24. Testing
+## Testing
 
 Run all automated tests:
 
@@ -864,7 +864,7 @@ Tests cover:
 
 ---
 
-## 25. Docker
+## Docker
 
 Start containerised services:
 
@@ -894,7 +894,7 @@ The Docker environment can be extended to include:
 
 ---
 
-## 26. Research Mode vs Full Deployment Mode
+## Research Mode vs Full Deployment Mode
 
 ### Standalone Research Mode
 
@@ -926,7 +926,7 @@ This separation allows the research methodology to be evaluated without requirin
 
 ---
 
-## 27. Important Dataset and Security Notes
+## Important Dataset and Security Notes
 
 ### Dataset
 
@@ -952,7 +952,7 @@ It has not undergone the certification, penetration testing, regulatory validati
 
 ---
 
-## 28. Reproducing the Main Workflow
+## Reproducing the Main Workflow
 
 ### Install dependencies
 
@@ -987,7 +987,7 @@ python experiments/run_all.py --backend tensorflow
 
 ---
 
-## 29. Expected Outputs
+## Expected Outputs
 
 Experimental outputs are stored under:
 
@@ -1011,7 +1011,7 @@ Possible outputs include:
 
 ---
 
-## 30. Future Extensions
+## Future Extensions
 
 Potential extensions include:
 
@@ -1032,15 +1032,13 @@ Potential extensions include:
 
 ---
 
-## 31. Citation
+## Citation
 
 If you use HealthBlockSecure in academic work, please cite:
 
 ```bibtex
 @article{healthblocksecure,
   title = {Decentralised Health Record Management with Blockchain: Privacy and Security in Cloud-Based Systems},
-  author = {Authors},
-  journal = {Journal},
   year = {2026}
 }
 ```
