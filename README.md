@@ -1057,19 +1057,10 @@ See the `LICENSE` file for details.
 
 ---
 
-## 33. Repository Status
-
-**Research Prototype**
-
-**Active Development**
-
-**Experimental Validation**
-
-**Not for Clinical Deployment**
 
 ---
 
-## 34. Contact
+## Contact
 
 For research questions, reproducibility issues, or collaboration requests, add the corresponding author or project-maintainer contact information here.
 
