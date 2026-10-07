@@ -1049,17 +1049,11 @@ If you use HealthBlockSecure in academic work, please cite:
 
 ---
 
-## 32. License
+## License
 
-Add the license appropriate for your publication and institutional requirements.
+This project is licensed under the **MIT License**.
 
-A commonly used option for academic open-source research is:
-
-```text
-MIT License
-```
-
-If the code or data are subject to institutional, commercial, or dataset-specific restrictions, use the corresponding license instead.
+See the `LICENSE` file for details.
 
 ---
 
