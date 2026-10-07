@@ -1,13 +1,9 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23204671-blue)](https://doi.org/10.5281/zenodo.23204671)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-HealthBlockSecure-black?logo=github)](https://github.com/Sripada-RamaSree/HealthBlockSecure)
 
 ---
 
-## Code Archive
-
-**GitHub repository:**  https://github.com/Sripada-RamaSree/HealthBlockSecure
-
-**Permanent archived release (Zenodo DOI):**  https://doi.org/10.5281/zenodo.23204671
 
 # HealthBlockSecure
 
